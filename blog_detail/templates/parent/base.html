@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>blog | {% block title %}{% endblock %}</title>
+
+</head>
+<body>
+    {% include 'partials/header.html' %}
+    {% block content %} {% endblock %}
+    {% include 'partials/footer.html' %}
+</body>
+</html>
