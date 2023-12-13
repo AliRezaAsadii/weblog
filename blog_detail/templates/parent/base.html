@@ -1,18 +1,22 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>blog | {% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="../dist/output.css">
-
-</head>
-<body>
-    {% include 'partials/header.html' %}
-    {% block content %} {% endblock %}
-    {% include 'partials/footer.html' %}
-</body>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>blog | {% block title %}{% endblock %}</title>
+    <script async src="../js/htmlsLink/linkTailwind.js"></script>
+  </head>
+  <body>
+    {% include 'partials/header.html' %} {% block content %} {% endblock %} {%
+    include 'partials/footer.html' %}
+  </body>
 </html>
